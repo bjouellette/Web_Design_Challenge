@@ -1,0 +1,52 @@
+h1 {
+    color: white;
+}
+h2{
+    color: teal;
+}
+/* .box {
+    height: 400px;
+    padding: 20px;
+    color: teal;
+    background: white;
+  } */
+  
+  .margin-top-80 {
+    margin-top: 80px;
+  }
+body {
+    background-color: lightgrey;
+}
+
+.title{
+    color: teal;
+    font-family: 
+    font-weight: bolder;
+    padding-top: 25px;
+}
+
+.box{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-right: 5x;
+    padding: 10px 20px 15px;
+    background-color: white;
+
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+ .panel:hover{
+    border-color: teal;
+    border-style: solid;
+}
+p {
+line-height: 1.6; 
+  font-family: Helvetica;
+  text-align: justify;
+  margin: 0;
+  font-size: 14px;
+}
