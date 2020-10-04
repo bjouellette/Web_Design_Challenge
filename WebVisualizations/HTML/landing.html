@@ -10,10 +10,14 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
         <!-- Navigation Bar -->
         <div class = "navigation">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" style = "background-color: teal; color:white; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight: bolder; width: 150px; text-align: center; font-size: x-large" href="landing.html" >Latitude</a>
+                <a class="navbar-brand" style = "background-color: teal; color:white; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight: bolder; width: 140px; text-align: center; font-size: x-large" href="landing.html" >Latitude</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
@@ -24,7 +28,7 @@
                       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Plots
                       </a>
-                      <div class="dropdown-menu active" aria-labelledby="navbarDropdown">
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="vis1.html">Max Temperature</a>
                         <a class="dropdown-item" href="vis2.html">Humidity</a>
                         <a class="dropdown-item" href="vis3.html">Cloudiness</a>
@@ -51,9 +55,11 @@
               <div class="box">
                 <h2 class = "title">Summary: Latitude vs. X</h2>
                 <hr>
-                <img src="../Resources/assets/images/Fig1.png" >
-                <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
+                <div class="wrapper">
+                <img src="../Resources/assets/images/Fig1.png" class="col-xlg-6 img-responsive">
+                <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from OpenWeatherMap API to assemble a dataset on over 500 cities.</p><br >
                 <p> After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed. </p>
+              </div>
               </div>
             </div>
 
